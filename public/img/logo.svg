@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2048px" height="2216px" viewBox="0 0 2048 2216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#003C62" offset="0%"></stop>
+            <stop stop-color="#001C33" offset="100%"></stop>
+        </linearGradient>
+        <path id="path-2" d="M543.346939,1086.69388 C243.753796,1086.69388 0,842.96098 0,543.346939 C0,243.732898 243.753796,0 543.346939,0 C842.940082,0 1086.69388,243.732898 1086.69388,543.346939 C1086.69388,842.96098 842.940082,1086.69388 543.346939,1086.69388 L543.346939,1086.69388 Z"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#00608B" offset="0%"></stop>
+            <stop stop-color="#003253" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup">
+            <g id="834-bolt@2x" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup">
+                <g id="_x38_34-bolt_x40_2x.png">
+                    <path d="M2027.55938,559.373434 L2027.83508,558.859195 L1043.21969,5.06327697 L1042.944,5.57751603 C1037.27262,2.37341108 1031.01046,0 1024,0 C1016.98954,0 1010.76677,2.37341108 1005.056,5.57751603 L1004.78031,5.06327697 L20.1649231,558.859195 L20.4406154,559.373434 C8.46769231,566.137656 0,578.558507 0,593.35277 L0,1621.8309 C0,1636.62517 8.46769231,1649.04602 20.4406154,1655.81024 L20.1649231,1656.36403 L1004.78031,2210.15995 L1005.056,2209.60616 C1010.76677,2212.84982 1016.98954,2215.18367 1024,2215.18367 C1031.01046,2215.18367 1037.27262,2212.84982 1042.944,2209.60616 L1043.21969,2210.15995 L2027.83508,1656.36403 L2027.55938,1655.81024 C2039.57169,1649.04602 2048,1636.62517 2048,1621.8309 L2048,593.35277 C2048,578.558507 2039.57169,566.137656 2027.55938,559.373434 L2027.55938,559.373434 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="720-keyhole@2x" transform="translate(480.653061, 564.244898)">
+                <g id="_x37_20-keyhole_x40_2x.png">
+                    <g id="Shape">
+                        <use fill="#FFFFFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                        <use fill="none" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M543.346939,208.979592 C439.463184,208.979592 355.265306,293.177469 355.265306,397.061224 C355.265306,470.392163 397.312,533.733878 458.522122,564.767347 L376.163265,877.714286 L710.530612,877.714286 L628.171755,564.767347 C689.381878,533.733878 731.428571,470.392163 731.428571,397.061224 C731.428571,293.177469 647.230694,208.979592 543.346939,208.979592 Z" id="Path" fill="url(#linearGradient-3)" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

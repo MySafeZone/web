@@ -1,0 +1,1 @@
+<td colspan="4">There is no Case yet, click on + Case to create the first one.</td>

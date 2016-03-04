@@ -1,0 +1,1 @@
+<td colspan="3">There is no Leter yet, click on + Leter to create the first one.</td>
