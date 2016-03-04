@@ -6,7 +6,6 @@ Route::group(
     ['middleware' => 'web'], function () {
 
         Route::get('/', 'HomeController@index');
-	dd("Hello");
 
         Route::auth();
 
