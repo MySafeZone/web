@@ -9,7 +9,7 @@ class EncryptedFile extends UuidModel
 {
     public $incrementing = false;
     public $timestamps = true;
-    protected $table = 'encrypted_file';
+    protected $table = 'encryptedfiles';
 
     public function user()
     {
