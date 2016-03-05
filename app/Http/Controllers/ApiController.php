@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Auth;
 use File;
+use Response;
 
 class ApiController extends Controller
 {
