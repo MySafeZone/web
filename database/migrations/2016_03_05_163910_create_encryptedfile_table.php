@@ -15,6 +15,7 @@ class CreateEncryptedfileTable extends Migration
         Schema::create('encryptedfiles', function (Blueprint $table) {
             $table->string('id', 36)->primary();
             $table->text("content");
+            $table->timestamps();
         });
     }
 
