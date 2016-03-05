@@ -31,27 +31,32 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Locker</h4>
-                    <p class="text-muted">We'll never know your secrets and certainly don't want to. Every document is encrypted client side on the fly.</p>
+                    <p class="text-muted">You own your data</p>
+                    <p class="text-muted">Share your data with trusted third party</p>
+                    <p class="text-muted">Choose who you'll share your information with and how many of them are required to decrypt it. Stay in control. Release whenever you're ready, or delete the whole case.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Encrypted data</h4>
-                    <p class="text-muted">Leter lets you set a disclosure trigger pulled if your signs of activity suddenly stop : daily, weekly, monthly...</p>
+                    <p class="text-muted">Every document is encrypted client side on the fly</p>
+                    <p class="text-muted">Document is deleted from the device after upload</p>
+                    <p class="text-muted">You're the only owner of your key</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Disclosure workflow</h4>
-                    <p class="text-muted">Choose who you'll share your information with and how many of them are required to decrypt it. Stay in control. Release whenever you're ready, or delete the whole case.</p>
+                    <h4 class="service-heading">Secure cloud</h4>
+                    <p class="text-muted">Only encrypted data are stored on the cloud</p>
+                    <p class="text-muted">Your key is needed to to decrypt data</p>
                 </div>
             </div>
         </div>
