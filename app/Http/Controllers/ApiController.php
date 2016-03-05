@@ -8,10 +8,12 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\EncryptedFile;
 use Auth;
 use File;
 use Response;
 use Storage;
+
 
 class ApiController extends Controller
 {
