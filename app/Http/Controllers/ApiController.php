@@ -44,9 +44,10 @@ class ApiController extends Controller
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
-            $request->file('document')->move("/app/public/");
+            $request->file('document')->move(public_path("test.txt"));
         }
         $u = Auth::guard('api')->user();
+
         return Response::make(
             json_encode(array('result' => $res)),
             200,

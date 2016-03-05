@@ -24,8 +24,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function bags()
+    public function files()
     {
-        return $this->hasMany('\App\Models\Bag');
+        return $this->hasMany('EncryptedFile');
     }
 }
