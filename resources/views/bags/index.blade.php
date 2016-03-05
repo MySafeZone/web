@@ -15,14 +15,14 @@
 
                 @include('helpers.status')
 
-                <a type="button" class="btn btn-default btn-primary" href="{{ secure_url('bag/create') }}"><i class="fa fa-plus-circle"></i> Bag</a><br /><br />
+                {{-- <a type="button" class="btn btn-default btn-primary" href="{{ secure_url('bag/create') }}"><i class="fa fa-plus-circle"></i> Bag</a><br /><br /> --}}
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Recipients</th>
-                                    <th>Title</th>
-                                    <th>Periodicity</th>
+                                    <th>ID</th>
+                                    <th>Date</th>
+                                    <th>Size</th>
                                     <th class="text-right">Actions</th>
                                 </tr>
                             </thead>
