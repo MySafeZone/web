@@ -42,3 +42,7 @@ Route::group(
         Route::get('privacy', ['uses' => 'MarkdownController@privacy', 'as' => 'privacy']);
     }
 );
+
+Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function () {
+    Route::get('test', ['uses' => 'ApiController@test']);
+});
