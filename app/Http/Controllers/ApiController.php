@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Http\Request as Request;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Auth;
 
 class ApiController extends Controller
