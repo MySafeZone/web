@@ -36,15 +36,19 @@ class ApiController extends Controller
 
     public function upload(Request $request)
     {
-        Storage::disk('local')->put('public/safezone_fb/file.txt', 'Hello !');
-        Storage::disk('local')->put('public/file.txt', 'Hello 2 !');
-        Storage::put("/app/public/safezone_fb/test_storage_a.txt", "Via storage peut être ?");
-        file_put_contents(public_path() + "/test_fpc_f.txt", "via file put content");
+        // Storage::disk('local')->put('public/safezone_fb/file.txt', 'Hello !');
+        // Storage::disk('local')->put('public/file.txt', 'Hello 2 !');
+        // Storage::put("/app/public/safezone_fb/test_storage_a.txt", "Via storage peut être ?");
+        // file_put_contents(public_path() + "/test_fpc_f.txt", "via file put content");
         file_put_contents("/app/public/safezone_fb/test_fpc_a.txt", "via file put content dans le fb ?");
         if ($request->hasFile('document')) {
             $request->file('document')->move("/app/public/safezone_fb/");
         }
-        return 200;
+        return Response::make(
+            json_encode(array('result' => 'ok')),
+            200,
+            array('Content-Type' => 'application/json; charset=utf-8')
+        );
     }
 
     public function randomApiToken(Request $request)
