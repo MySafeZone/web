@@ -48,12 +48,12 @@ class ApiController extends Controller
             $res = "document uploaded";
             $doc_file = $request->file('document');
             // fonctionne
-            $doc_file->move(public_path('files'), $doc_file->getClientOriginalName());
+            // $doc_file->move(public_path('files'), $doc_file->getClientOriginalName());
             // dans le file bucket peut être ?
             $doc_file->move(public_path('safezone_fb'), $doc_file->getClientOriginalName());
             // var_dump($doc_file);
             $file = new EncryptedFile();
-            $file->content = file_get_contents($doc_file);
+            $file->content = $doc_file->getClientOriginalName();
             // var_dump($file->content);
             $file->user_id = $u->id;
             $file->save();
