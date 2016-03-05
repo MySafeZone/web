@@ -19,7 +19,7 @@ class ApiController extends Controller
         if ($user && app()['hash']->check($request->input('password'), $user->password)) {
             $user->api_token = str_random(60); // On génére un nouveau token aléatoire
             $user->save();
-            return response()->json(['result' => 'ok', 'api_token' => $user->api_token, 'key' => File::get('public/D39B74E6.asc')]);
+            return response()->json(['result' => 'ok', 'api_token' => $user->api_token, 'key' => File::get('D39B74E6.asc')]);
         }
         return (new Response(array('error' => "Bad credentials"), 401))->header('Content-Type', 'application/json');
     }
