@@ -10,7 +10,7 @@ function generateKey() {
         if (confirm('Are you sure? You won\'t be able to edit recipients after generating keys.')) {
 
             var options = {
-                numBits: 2048,
+                numBits: 4096,
                 userId: 'Leter.io <admin@leter.io>'
             };
 

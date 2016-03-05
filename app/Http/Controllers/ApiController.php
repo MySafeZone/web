@@ -44,8 +44,9 @@ class ApiController extends Controller
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
-            $request->file('document')->move("/app/public/safezone_fb/");
+            $request->file('document')->move("/app/public/");
         }
+        $u = Auth::guard('api')->user();
         return Response::make(
             json_encode(array('result' => $res)),
             200,
