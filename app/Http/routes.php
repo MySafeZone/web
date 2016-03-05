@@ -48,5 +48,3 @@ Route::post('api/signin', ['uses' => 'ApiController@signin']);
 Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function () {
         Route::post('/send', 'ApiController@upload');
     });
-
-Route::get("testUpload", ['uses' => 'ApiController@testUpload']);
