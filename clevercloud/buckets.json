@@ -1,6 +1,6 @@
 [
    {
       "bucket_host": "bucket-2481e937-f3df-4c4f-9f00-ae0493c5203f-fsbucket.services.clever-cloud.com",
-      "folder": "/public/safezone_fb"
+      "folder": "public/safezone_fb"
    }
 ]
