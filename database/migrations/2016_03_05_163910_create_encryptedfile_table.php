@@ -16,6 +16,8 @@ class CreateEncryptedfileTable extends Migration
             $table->string('id', 36)->primary();
             $table->text("content");
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->on_delete('restrict');
         });
     }
 
