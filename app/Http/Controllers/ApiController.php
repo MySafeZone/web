@@ -11,7 +11,7 @@ use App\Models\User;
 use Auth;
 use File;
 use Response;
-use Hash;
+use Storage;
 
 class ApiController extends Controller
 {
@@ -36,7 +36,8 @@ class ApiController extends Controller
 
     public function upload(Request $request)
     {
-        return "hello";
+        Storage::disk('local')->put('public/safezone_fb/file.txt', 'Hello !');
+        return "ok";
     }
 
     public function randomApiToken(Request $request)
