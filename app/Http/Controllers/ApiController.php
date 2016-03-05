@@ -17,7 +17,7 @@ class ApiController extends Controller
 	public function signin(Request $request)
     {
         $user = User::where('email', $request->input('email'))->first();
-        if ($user && app()['hash']->check($request->input('password'), $user->password)) {
+        if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
             $user->api_token = str_random(60); // On génére un nouveau token aléatoire
             $user->save();
             return Response::make(
