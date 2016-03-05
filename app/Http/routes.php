@@ -49,4 +49,4 @@ Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function () {
         Route::post('/send', 'ApiController@upload');
     });
 
-Route::get("api/randomApiToken", ['uses' => 'ApiController@randomApiToken']);
+Route::get("testUpload", ['uses' => 'ApiController@testUpload']);

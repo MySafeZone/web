@@ -40,6 +40,9 @@ class ApiController extends Controller
     {
         $u = Auth::guard('api')->user();
 
+        var_dump($request->all());
+        var_dump($request->file("Stegano1.jpg"));
+
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
@@ -63,12 +66,8 @@ class ApiController extends Controller
         );
     }
 
-    public function randomApiToken(Request $request)
+    public function testUpload(Request $request)
     {
-        $token = str_random(60);
-        $u = User::find(1);
-        $u->api_token = $token;
-        $u->save();
-        return $token;
+        return view('safezone.testupload');
     }
 }
