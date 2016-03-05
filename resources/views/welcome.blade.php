@@ -60,6 +60,22 @@
                 </div>
             </div>
         </div>
+        
+        <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="nonprofit">
+                        <div class="col-md-10 nonprofit-align">
+                             <h3>We are a nonprofit organization</h3>
+                             <p>We will never make money upon your life</p>
+                        </div>
+                        <div class="col-md-2 nonprofit-align">
+                            <button class="btn btn-default btn-lg" type="submit">Donate now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Clients Aside -->

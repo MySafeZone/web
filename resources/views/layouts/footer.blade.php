@@ -6,7 +6,7 @@
 		</div>
 		<div class="col-md-4">
 		    <ul class="list-inline social-buttons">
-		        <li><a href="https://twitter.com/mysafezone"><i class="fa fa-twitter"></i></a></li>
+		        <li><a href="https://twitter.com/my_safezone"><i class="fa fa-twitter"></i></a></li>
 		    </ul>
 		</div>
 		<div class="col-md-4">
