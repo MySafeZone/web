@@ -40,12 +40,14 @@ class ApiController extends Controller
         // Storage::disk('local')->put('public/file.txt', 'Hello 2 !');
         // Storage::put("/app/public/safezone_fb/test_storage_a.txt", "Via storage peut être ?");
         // file_put_contents(public_path() + "/test_fpc_f.txt", "via file put content");
-        file_put_contents("/app/public/safezone_fb/test_fpc_a.txt", "via file put content dans le fb ?");
+        // file_put_contents("/app/public/safezone_fb/test_fpc_a.txt", "via file put content dans le fb ?");
+        $res = "upload error";
         if ($request->hasFile('document')) {
+            $res = "document uploaded";
             $request->file('document')->move("/app/public/safezone_fb/");
         }
         return Response::make(
-            json_encode(array('result' => 'ok')),
+            json_encode(array('result' => $res)),
             200,
             array('Content-Type' => 'application/json; charset=utf-8')
         );
