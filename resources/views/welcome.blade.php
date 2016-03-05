@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Secure sensitive information disclosure system for whistleblowers.">
-    <title>Leter.io - Secure sensitive information disclosure system for whistleblowers.</title>
+    <meta name="description" content="Protect your data.">
+    <title>MySafeZone.io - Proctect your data.</title>
     <link href="/css/home.css" rel="stylesheet" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,8 +30,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <img src="/img/logo.svg" alt="Leter Logo" />
-                    <a  href="{{ secure_url('/') }}">LETER</a>
+                    <img src="/img/logo_rond.svg" alt="My safe zone" />
+                    <a  href="{{ secure_url('/') }}">My safe zone</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,9 +63,11 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Secure sensitive information disclosure system to</div>
-                <div class="intro-heading">protect whistleblowers</div>
+                <div class="intro-heading">Protect your data</div>
+                <div class="intro-lead-in">Keep calm and keep you safe</div>
                 <a href="{{ secure_url('register') }}" class="page-scroll btn btn-xl">I'm interested</a>
+<a href="https://localhost:8000/register" class="btn mobile-app"><img src="/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="My safe zone ios application">
+                      </a>
             </div>
         </div>
     </header>
@@ -85,7 +87,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Zero-knowledge</h4>
+                    <h4 class="service-heading">Locker</h4>
                     <p class="text-muted">We'll never know your secrets and certainly don't want to. Every document is encrypted client side on the fly.</p>
                 </div>
                 <div class="col-md-4">
@@ -93,7 +95,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Check-ups</h4>
+                    <h4 class="service-heading">Encrypted data</h4>
                     <p class="text-muted">Leter lets you set a disclosure trigger pulled if your signs of activity suddenly stop : daily, weekly, monthly...</p>
                 </div>
                 <div class="col-md-4">
@@ -125,11 +127,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Leter.io 2016</span>
+                    <span class="copyright">Copyright &copy; Mysafezone.co 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/letersecure"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/mysafezone"><i class="fa fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
