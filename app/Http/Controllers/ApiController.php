@@ -40,20 +40,21 @@ class ApiController extends Controller
     {
         $u = Auth::guard('api')->user();
 
-        var_dump($request->all());
-        var_dump($request->file("Stegano1.jpg"));
+        // var_dump($request->all());
+        // var_dump($request->file("Stegano1.jpg"));
 
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
             $doc_file = $request->file('document');
+            $filename = $doc_file->getClientOriginalName();
             // fonctionne
             $doc_file->move(public_path('files'), $doc_file->getClientOriginalName());
             // dans le file bucket peut être ?
-            $doc_file->move(public_path('safezone_fb'), $doc_file->getClientOriginalName());
+            // $doc_file->move(public_path('safezone_fb'), $filename);
             // var_dump($doc_file);
-            $file = new EncryptedFile();
-            $file->content = file_get_contents($doc_file);
+            $file = new EncryptedFile;
+            $file->content = $filename;
             // var_dump($file->content);
             $file->user_id = $u->id;
             $file->save();
