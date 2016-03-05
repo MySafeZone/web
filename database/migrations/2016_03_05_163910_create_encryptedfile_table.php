@@ -12,7 +12,7 @@ class CreateEncryptedfileTable extends Migration
      */
     public function up()
     {
-        Schema::create('leters', function (Blueprint $table) {
+        Schema::create('encryptedfile', function (Blueprint $table) {
             $table->string('id', 36)->primary();
             $table->text("content");
         });
