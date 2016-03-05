@@ -20,9 +20,17 @@ class ApiController extends Controller
         if ($user && app()['hash']->check($request->input('password'), $user->password)) {
             $user->api_token = str_random(60); // On génére un nouveau token aléatoire
             $user->save();
-            return (new Response(json_encode(array('result' => 'ok', 'api_token' => $user->api_token, 'key' => File::get('D39B74E6.asc'))), 200))->header('Content-Type', 'application/json');
+            return Response::make(
+                    json_encode(array('result' => 'ok', 'api_token' => $user->api_token, 'key' => File::get('D39B74E6.asc'))),
+                    200,
+                    array('Content-Type' => 'application/json; charset=utf-8')
+                );
         }
-        return (new Response(json_encode(array('error' => "Bad credentials")), 401));
+        return Response::make(
+            json_encode(array('error' => "Bad credentials")),
+            401,
+            array('Content-Type' => 'application/json; charset=utf-8')
+        );
     }
 
     public function randomApiToken(Request $request)
