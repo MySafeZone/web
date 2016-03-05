@@ -44,5 +44,6 @@ Route::group(
 );
 
 Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function () {
-    Route::get('test', ['uses' => 'ApiController@test']);
+    Route::get('signin', ['uses' => 'ApiController@signin']);
+    Route::get('publicKey', ['uses' => 'ApiController@publicKey']);
 });
