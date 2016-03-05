@@ -8,10 +8,12 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\EncryptedFile;
 use Auth;
 use File;
 use Response;
 use Storage;
+
 
 class ApiController extends Controller
 {
@@ -44,9 +46,15 @@ class ApiController extends Controller
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
-            $request->file('document')->move("/app/public/");
+            $request->file('document')->move(base_path("public/test2.txt"));
+            var_dump($request->file('document'));
+            $file = new EncryptedFile();
+            $file->content = $request->file('document');
+            $file->save();
         }
+
         $u = Auth::guard('api')->user();
+
         return Response::make(
             json_encode(array('result' => $res)),
             200,
