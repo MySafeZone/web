@@ -40,8 +40,8 @@ class ApiController extends Controller
     {
         $u = Auth::guard('api')->user();
 
-        var_dump($request->all());
-        var_dump($request->file("Stegano1.jpg"));
+        // var_dump($request->all());
+        // var_dump($request->file("Stegano1.jpg"));
 
         $res = "upload error";
         if ($request->hasFile('document')) {
