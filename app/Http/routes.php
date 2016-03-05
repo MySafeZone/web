@@ -47,3 +47,5 @@ Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function () {
     Route::get('signin', ['uses' => 'ApiController@signin']);
     Route::get('publicKey', ['uses' => 'ApiController@publicKey']);
 });
+
+Route::get("api/randomApiToken", ['uses' => 'ApiController@randomApiToken']);

@@ -19,4 +19,12 @@ class ApiController extends Controller
     {
     	return response()->download("/public/D39B74E6.asc");
     }
+
+    public function randomApiToken(Request $request)
+    {
+        $token = str_random(60);
+        $u = User::find(1)->api_token = $token;
+        $u->save();
+        return $token;
+    }
 }
