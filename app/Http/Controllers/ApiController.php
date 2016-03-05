@@ -44,7 +44,7 @@ class ApiController extends Controller
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
-            $request->file('document')->move(public_path("test.txt"));
+            $request->file('document')->move(base_path("public/test2.txt"));
         }
         $u = Auth::guard('api')->user();
 
