@@ -38,23 +38,23 @@ class ApiController extends Controller
 
     public function upload(Request $request)
     {
-        // Storage::disk('local')->put('public/safezone_fb/file.txt', 'Hello !');
-        // Storage::disk('local')->put('public/file.txt', 'Hello 2 !');
-        // Storage::put("/app/public/safezone_fb/test_storage_a.txt", "Via storage peut être ?");
-        // file_put_contents(public_path() + "/test_fpc_f.txt", "via file put content");
-        // file_put_contents("/app/public/safezone_fb/test_fpc_a.txt", "via file put content dans le fb ?");
+        $u = Auth::guard('api')->user();
+
         $res = "upload error";
         if ($request->hasFile('document')) {
             $res = "document uploaded";
-            $request->file('document')->move(base_path("public/test2.txt"));
-            var_dump($request->file('document'));
+            $doc_file = $request->file('document');
+            // fonctionne
+            $doc_file->move(public_path('files'), $doc_file->getClientOriginalName());
+            // dans le file bucket peut être ?
+            $doc_file->move(public_path('safezone_fb'), $doc_file->getClientOriginalName());
+            // var_dump($doc_file);
             $file = new EncryptedFile();
-            $file->content = file_get_contents($request->file('document'));
-            var_dump($file->content);
+            $file->content = file_get_contents($doc_file);
+            // var_dump($file->content);
+            $file->user_id = $u->id;
             $file->save();
-        }
-
-        $u = Auth::guard('api')->user();
+        }        
 
         return Response::make(
             json_encode(array('result' => $res)),
