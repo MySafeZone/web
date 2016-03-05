@@ -31,7 +31,8 @@ class ApiController extends Controller
     public function randomApiToken(Request $request)
     {
         $token = str_random(60);
-        $u = User::find(1)->api_token = $token;
+        $u = User::find(1);
+        $u->api_token = $token;
         $u->save();
         return $token;
     }
