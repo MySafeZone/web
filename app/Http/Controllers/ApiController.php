@@ -11,6 +11,7 @@ use App\Models\User;
 use Auth;
 use File;
 use Response;
+use Hash;
 
 class ApiController extends Controller
 {
