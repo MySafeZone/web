@@ -53,11 +53,11 @@ class ApiController extends Controller
             // dans le file bucket peut être ?
             $doc_file->move(public_path('safezone_fb'), $filename);
             // var_dump($doc_file);
-            $file = new EncryptedFile();
-            $file->content = $filename;
-            // var_dump($file->content);
-            $file->user_id = $u->id;
-            $file->save();
+            // $file = new EncryptedFile();
+            // $file->content = $filename;
+            // // var_dump($file->content);
+            // $file->user_id = $u->id;
+            // $file->save();
         }        
 
         return Response::make(
