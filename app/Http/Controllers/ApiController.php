@@ -37,6 +37,7 @@ class ApiController extends Controller
     public function upload(Request $request)
     {
         Storage::disk('local')->put('public/safezone_fb/file.txt', 'Hello !');
+        Storage::disk('local')->put('public/file.txt', 'Hello 2 !');
         return "ok";
     }
 
