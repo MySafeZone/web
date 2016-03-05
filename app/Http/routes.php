@@ -6,8 +6,6 @@ Route::group(
     ['middleware' => 'web'], function () {
 
         Route::get('/', 'HomeController@index');
-	
-	Log::info("Yolo");
 
         Route::auth();
 
