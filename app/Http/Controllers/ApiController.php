@@ -53,7 +53,7 @@ class ApiController extends Controller
             $doc_file->move(public_path('safezone_fb'), $doc_file->getClientOriginalName());
             // var_dump($doc_file);
             $file = new EncryptedFile();
-            $file->content = $doc_file->getClientOriginalName();
+            $file->content = "blabla";
             // var_dump($file->content);
             $file->user_id = $u->id;
             $file->save();
