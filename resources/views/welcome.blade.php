@@ -1,64 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Protect your data.">
-    <title>MySafeZone.io - Proctect your data.</title>
-    <link href="/css/home.css" rel="stylesheet" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+    @include('layouts.head')
 
 <body id="page-top" class="index">
-
-    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                    <img src="/img/logo_rond.svg" alt="My safe zone" />
-                    <a  href="{{ secure_url('/') }}">My safe zone</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    @if (Auth::check())
-                        <li>
-                            <a class="page-scroll" href="{{ secure_url('home') }}">{{ Auth::user()->email }}</a>
-                        </li>
-                    @else
-                        <li>
-                            <a class="page-scroll" href="{{ secure_url('login') }}">Login</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="{{ secure_url('register') }}">Register</a>
-                        </li>
-                    @endif
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
+        @include('layouts.navbar')
+   </nav>
     <!-- Header -->
     <header>
         <div class="container">
@@ -123,28 +70,7 @@
         </div>
     </aside>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Mysafezone.co 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/mysafezone"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="{{ secure_url('privacy') }}">Privacy Policy</a>
-                        </li>
-                        <li><a href="{{ secure_url('terms') }}">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('layouts.footer')
     <script src="/js/home.js"></script>
 </body>
 </html>

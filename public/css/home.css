@@ -824,4 +824,8 @@ body {
   padding-top: 25px;
 }
 
+.navbar-background{
+  background-image: url(/img/bg-blue.jpg);
+}
+
 /*# sourceMappingURL=home.css.map */
