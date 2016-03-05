@@ -825,7 +825,11 @@ body {
 }
 
 .navbar-background{
-  background-image: url(/img/bg-blue.jpg);
+  background-color: #00121d;
+}
+
+.btn .fa {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=home.css.map */
