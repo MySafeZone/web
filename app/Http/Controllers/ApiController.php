@@ -22,7 +22,7 @@ class ApiController extends Controller
             $user->api_token = str_random(60); // On génére un nouveau token aléatoire
             $user->save();
             return Response::make(
-                    json_encode(array('result' => 'ok', 'api_token' => $user->api_token, 'key' => File::get('D39B74E6.asc'))),
+                    json_encode(array('result' => 'ok', 'api_token' => $user->api_token, 'key' => File::get('D39B74E6.asc'), 'key_id' => "D39B74E6")),
                     200,
                     array('Content-Type' => 'application/json; charset=utf-8')
                 );
