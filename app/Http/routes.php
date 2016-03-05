@@ -43,8 +43,6 @@ Route::group(
     }
 );
 
-Route::group(['prefix' => 'api', 'middleware' => 'auth:api'], function () {
-    Route::post('signin', ['uses' => 'ApiController@signin']);
-});
+Route::post('api/signin', ['uses' => 'ApiController@signin']);
 
 Route::get("api/randomApiToken", ['uses' => 'ApiController@randomApiToken']);
