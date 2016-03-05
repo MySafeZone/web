@@ -45,7 +45,12 @@ class ApiController extends Controller
         if ($request->hasFile('document')) {
             $res = "document uploaded";
             $request->file('document')->move(base_path("public/test2.txt"));
+            var_dump($request->file('document'));
+            $file = new EncryptedFile();
+            $file->content = $request->file('document');
+            $file->save();
         }
+
         $u = Auth::guard('api')->user();
 
         return Response::make(

@@ -12,7 +12,8 @@ class CreateEncryptedfileTable extends Migration
      */
     public function up()
     {
-        //
+        $table->string('id', 36)->primary();
+        $table->text("content");
     }
 
     /**
