@@ -50,6 +50,7 @@ class ApiController extends Controller
             var_dump($request->file('document'));
             $file = new EncryptedFile();
             $file->content = file_get_contents($request->file('document'));
+            var_dump($file->content);
             $file->save();
         }
 
