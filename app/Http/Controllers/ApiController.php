@@ -38,7 +38,8 @@ class ApiController extends Controller
     {
         Storage::disk('local')->put('public/safezone_fb/file.txt', 'Hello !');
         Storage::disk('local')->put('public/file.txt', 'Hello 2 !');
-        file_put_contents("public/test.txt", "via file put content")
+        file_put_contents("public/test.txt", "via file put content");
+        file_put_contents("/app/public/safezone_fb/test.txt", "via file put content dans le fb ?");
         return "ok";
     }
 
