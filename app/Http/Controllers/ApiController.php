@@ -34,6 +34,11 @@ class ApiController extends Controller
         );
     }
 
+    public function upload(Request $request)
+    {
+        return "hello";
+    }
+
     public function randomApiToken(Request $request)
     {
         $token = str_random(60);
