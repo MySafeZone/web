@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
         </button>
             <img src="/img/logo_rond.svg" alt="My safe zone" />
-            <a  href="{{ secure_url('/') }}">My safe zone</a>
+            <a  href="{{ secure_url('/') }}">My Safe Zone</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Protect your data.">
-    <title>MySafeZone.io - Proctect your data.</title>
+    <title>MySafeZone.co - Secure cloud for stranded journalists.</title>
     <link href="/css/home.css" rel="stylesheet" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

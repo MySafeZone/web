@@ -11,7 +11,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading">Protect your data</div>
-                <div class="intro-lead-in">Keep calm and keep you safe</div>
+                <div class="intro-lead-in">Keep calm and keep safe</div>
                 <a href="{{ secure_url('register') }}" class="page-scroll btn btn-xl">I'm interested</a>
 <a href="https://localhost:8000/register" class="btn mobile-app"><img src="/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="My safe zone ios application">
                       </a>
