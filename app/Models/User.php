@@ -26,6 +26,6 @@ class User extends Authenticatable
 
     public function files()
     {
-        return $this->hasMany('EncryptedFile');
+        return $this->hasMany('App\Models\EncryptedFile');
     }
 }

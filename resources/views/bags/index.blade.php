@@ -17,17 +17,17 @@
 
                 {{-- <a type="button" class="btn btn-default btn-primary" href="{{ secure_url('bag/create') }}"><i class="fa fa-plus-circle"></i> Bag</a><br /><br /> --}}
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    {{-- <th>Name</th> --}}
+                                    <th>File</th>
                                     <th>Date</th>
-                                    <th>Size</th>
-                                    <th class="text-right">Actions</th>
+                                    {{-- <th class="text-right">Actions</th> --}}
                                 </tr>
                             </thead>
                             <tbody>
-                                @each('helpers.line_bag', $bags, 'bag', 'helpers.bag_empty')
+                                @each('helpers.line_file', $files, 'file', 'helpers.file_empty')
                             </tbody>
                         </table>
                     </div>

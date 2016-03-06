@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Bag;
 use App\Models\Leter;
+use App\Models\EncryptedFile;
 use Auth;
 use Mail;
 use App\Repositories\BagRepository;
@@ -27,7 +28,7 @@ class BagController extends Controller
     {
         return view(
             'bags.index', [
-            'bags' => $this->bags->forUser($request->user())
+            'files' => $request->user()->files->sortByDesc('created_at')
             ]
         );
     }
