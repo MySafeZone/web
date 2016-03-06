@@ -832,4 +832,25 @@ body {
   padding-right: 10px;
 }
 
+.nonprofit{
+    display: table;
+    height: 100%;
+}
+
+.nonprofit-align{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.btn-default{
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: #555;
+  color: #fff;
+}
+
 /*# sourceMappingURL=home.css.map */
