@@ -840,3 +840,10 @@ body {
   background-color: #555;
   color: #fff;
 }
+.dropdown-menu>li>a{
+color: #888;
+}
+.dropdown-menu, .dropdown-toggle, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  background: #00121d;
+  color: #fff;
+}

@@ -9,7 +9,11 @@
             <span class="icon-bar"></span>
         </button>
             <img src="/img/logo_rond.svg" alt="My safe zone" />
-            <a  href="{{ secure_url('/') }}">My Safe Zone</a>
+            @if (Auth::check())
+                <a  href="{{ secure_url('/home') }}">My Safe Zone</a>
+            @else
+                <a  href="{{ secure_url('/') }}">My Safe Zone</a>
+            @endif
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,8 +23,22 @@
                 <a href="#page-top"></a>
             </li>
             @if (Auth::check())
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->email }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="page-scroll" href="{{ secure_url('settings') }}">Settings</a>
+                        </li>
+                    </ul>
+                </li>
                 <li>
-                    <a class="page-scroll" href="{{ secure_url('home') }}">{{ Auth::user()->email }}</a>
+                    <a class="page-scroll" href="{{ secure_url('home') }}"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ secure_url('logout') }}">
+                        Sign-out
+                        <i class="fa fa-sign-out "></i>
+                    </a>
                 </li>
             @else
                 <li>
